@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600;700;800&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+/* End global */
+/* Start Home */
+main.home {
+    background-image:
+        linear-gradient(to bottom, rgba(214, 46, 51, 0.6), rgba(214, 46, 51, 0.6)),
+        url('../images/events-heavenly-header.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    color: #fff;
+    /* For older browsers */
+    height: 100vh;
+    height: 100svh;
+    transition: all 400ms;
+}
+
+.home-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.home-content h1 {
+    font-size: 3.75rem;
+}
+
+aside {
+    color: #fff;
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    background-color: #000;
+    padding: 60px 0px;
+    transition: 400ms;
+    left: -250px;
+    z-index: 10;
+    /* left: 0; */
+}
+
+.outer {
+    position: absolute;
+    top: 35%;
+    left: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transform: translateY(-50%);
+    font-size: 1.7rem;
+    cursor: pointer;
+    transition: 400ms;
+}
+
+aside .inner i {
+    position: absolute;
+    font-size: 30px;
+    cursor: pointer;
+    top: 30px;
+    right: 30px;
+}
+
+aside .inner i,
+aside .inner div a {
+    transition: color 400ms;
+}
+
+aside .inner i:hover,
+aside .inner div a:hover {
+    color: #D62E33;
+}
+
+aside a {
+    margin: 20px 8px 20px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    display: block;
+    color: white;
+}
+
+@media only screen and (max-width: 600px) {
+    .home-content h1 {
+        font-size: 2.75rem;
+    }
+
+    .outer {
+        position: absolute;
+        left: 15px;
+    }
+}
+
+/* End Home */
+/* Start Toggle*/
+
+.toggle {
+    width: 50%;
+    margin: 0 auto;
+    padding: 80px 0;
+    min-width: 500px;
+}
+
+.toggle h3 {
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    margin: 0;
+    background-color: rgba(214, 46, 51, 0.6);
+    cursor: pointer;
+    color: white;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.toggle .content {
+    display: none;
+    background-color: #ccc;
+    padding: 15px 20px;
+    margin: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    .toggle {
+        width: 90%;
+        min-width: auto;
+    }
+}
+
+/* End Toggle*/
+/* Start Counter */
+section.counter {
+    background-image:
+        linear-gradient(to bottom, rgba(214, 46, 51, 0.6), rgba(214, 46, 51, 0.6)),
+        url('../images/invitation-2508607__340.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 80px 0;
+}
+
+.counter-content .box .box-inner {
+    margin-bottom: 15px;
+}
+
+.counter-content .box .box-inner {
+    border: 1px solid white;
+    text-align: center;
+    padding: 30px 15px;
+    font-weight: 500;
+    font-size: 30px;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.counter-content .box p:first-of-type {
+    margin: 0;
+}
+
+.counter-content .box p:last-of-type {
+    margin: 0;
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    .counter-content .box {
+        max-width: 95%;
+        margin: auto;
+    }
+}
+
+/* End Counter */
+/* Start Join */
+section.join {
+    padding: 80px 15px 50px;
+}
+
+.join>h3 {
+    font-size: 35px;
+    color: #444;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.join>p {
+    color: #777;
+    font-weight: 300;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.join .join-left h4 {
+    font-size: 20px;
+    color: #444;
+    font-weight: bolder;
+    margin-bottom: 30px;
+}
+
+.join .join-left p {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 30px;
+}
+
+.join-left .icons .red {
+    color: #D62E33;
+}
+
+.join-left .icons i {
+    color: #777;
+    margin-right: 15px;
+}
+
+.join-left .social-list {
+    margin-bottom: 15px;
+}
+
+.join-left .social-list i {
+    font-size: 1.5rem;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #777;
+    border-radius: 5px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #777;
+    cursor: pointer;
+    transition: 400ms;
+}
+
+.join-left .social-list i:hover {
+    color: #fff;
+    background-color: #D62E33;
+    border: 1px solid #D62E33;
+}
+
+.join .join-right input {
+    margin-bottom: 25px;
+}
+
+.join .join-right input:focus {
+    border-color: #D62E33;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem #d62e34a3;
+}
+
+.join .join-right textarea {
+    height: 200px;
+    resize: none;
+}
+
+.join .join-right textarea:focus {
+    border-color: #D62E33;
+    box-shadow: 0 0 0 0.25rem #d62e34a3;
+}
+
+.join .join-right p {
+    margin: 15px 0;
+}
+
+.join .join-right p span {
+    color: #D62E33;
+}
+
+.join .join-right button {
+    background-color: #D62E33;
+    color: #fff;
+    padding: 10px 20px;
+    transition: 400ms;
+}
+
+.join .join-right button:hover {
+    background-color: #c8252b;
+}
+
+/* End Join */
