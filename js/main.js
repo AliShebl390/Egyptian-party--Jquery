@@ -54,3 +54,9 @@ $("#text-area").keyup(function () {
         $("#chars").text(char + " characters left");
     }
 });
+
+$("aside a").click(function () {
+    let sectionRef = $(this).attr("href");
+    let offset = $(sectionRef).offset().top;
+    $("html , body").animate({ scrollTop: offset }, 2000);
+});
